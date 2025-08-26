@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigación de etiquetas y otras características</title>
+</head>
+<body>
+  <header>
+    <h1>Investigación de etiquetas y otros elementos</h1>
+  </header>
+
+  <main>
+    
+      <h2>Diferencias entre etiquetas</h2>
+      
+      <h3>b y strong</h3>
+      <p>Tanto b como strong sirven para poder poner un texto en negritas, sin embargo<br>
+        <strong>strong</strong> sirve para darle más relevancia a lo que se está afectando para buscadores<br>
+        y lectores de texto y <b>b</b> sirve solo para que el texto se vea estilizado de esa manera.
+      </p>
+
+      <h3>i y em</h3>
+      <p>Ambas etiquetas sirven para mostrar un texto en cursiva, pero son diferentes en el<br>
+        sentido en que <b>em</b> sirve para señalar énfasis en esa parte, lo cual puede influir<br>
+        en la forma en que lo interpretan los buscadores o lectores de texto. <b>i</b> sirve para<br> 
+        estilizar de una manera en específico el texto que se está trabajando.
+      </p>
+
+      <h3>s y del</h3>
+      <p>En este caso, las etiquetas sirven para mostrar un texto que ha sido suprimido o "tachado".<br>
+        En este caso, <b>del</b> sirve para denotar texto que ya no ha sido requerido y se ha eliminado,<br>
+        lo cual tiene fuertes implicaciones en el lector de texto donde reconoce el texto como ya no válido,<br>
+        mientras que s solo significa que ya no es importante pero sin que implique su eliminación del texto.
+      </p>
+
+
+      <h2>Elementos de línea y de bloque</h2>
+      <p>La diferencia entre elementos de linea y bloque radica en como se utiliza el espacio disponible<br>
+        ya que un elemento de linea usará el espacio a lo ancho de la página dependiendo únicamente<br>
+        de su contenido y el elemento en bloque usará todo el espacio disponible a lo ancho de la página.</p>
+
+      <h3>Elementos de línea</h3>
+      <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>strong</li>
+        <li>em</li>
+        <li>img</li>
+      </ul>
+      
+      <h3>Elementos de bloque</h3>
+      <ul>
+        <li>div</li>
+        <li>p</li>
+        <li>h1</li>
+        <li>ul</li>
+        <li>nav</li>
+      </ul>
+   
+      <h2>Campos de formularios</h2>
+      
+      <form>
+        <h3>input</h3>
+        <p>Se usa para definir el tipo de entrada que se va a insertar.<br>
+            Propiedades: me, value, placeholder, required, disabled, readonly.
+        </p>
+        <ul>
+            <li>type="text": <input type="text" name="usuario" placeholder="Nombre"></li>
+            <li>type="email": <input type="email" name="correo" placeholder="correo@ejemplo.com"></li>
+            <li>type="password": <input type="password" name="clave" placeholder="Contraseña"></li>
+            <li>type="number": <input type="number" name="edad" min="1" max="99"></li>
+            <li>type="date": <input type="date" name="nacimiento"></li>
+            <li>type="color": <input type="color" name="color"></li>
+            <li>type="file": <input type="file" name="archivo"></li>
+        </ul>
+
+        <h3>label</h3>
+        <p>labe asocia un texto a un campo del formulario para intentar describirlo.<br> 
+            Propiedades: for, type.
+        </p>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+    
+        <h3>output</h3>
+        <p>output muestra resultados calculados o procesados en el formulario.<br>  
+            Propiedad: for 
+        </p>
+        <input type="number" id="a" value="4"> + 
+        <input type="number" id="b" value="6"> = 
+        <output id="resultado" for="a b">10</output>
+
+        <h3>progress</h3>
+        <p>Progress muestra el progreso de un proceso o tarea.<br>  
+            Propiedades: value, max.
+        </p>
+        <progress value="60" max="100"></progress>
+
+        <h3>select y option</h3>
+        <p>Select crea listas que se desplegan al seleccionarla. <br> 
+            Option define cada opción.<br>
+            Propiedades: value, selected, disabled.
+        </p>
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+            <option value="es" selected>España</option>
+      </select>
+
+
+        <h3>textarea</h3>
+        <p>textarea permite escribir texto en varias líneas.<br>  
+            Propiedades: rows, cols, placeholder, maxlength.
+        </p>
+        <textarea name="comentarios" rows="4" cols="40" placeholder="Escribe aquí tu comentario"></textarea>
+
+        <input type="submit" value="Enviar formulario">
+    </form>
+  </main>
+
+
+  <footer>
+  </footer>
+
+</body>
+</html>
