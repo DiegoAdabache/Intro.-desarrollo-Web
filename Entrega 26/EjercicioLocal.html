@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario chido</title>
+</head>
+<body>
+    <h1>Bienvenido a mi formulario</h1>
+    
+    <form>
+        
+        <ul>
+            <li>Nombre: <input id="nombre" type="text" name="usuario" placeholder="Nombre"></li>
+            <li>Edad: <input id="edad" type="number" name="edad" placeholder="Edad"></li>
+            <li>Día favorito de la semana: 
+                <select id="dia" name="dia">
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miercoles">Miércoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                    <option value="Sábado">Sábado</option>
+                    <option value="Domingo">Domingo</option>
+                </select>
+            </li>
+        </ul>
+        <button type="button" onclick="guardarLS(document.getElementById('nombre').value, document.getElementById('edad').value, document.getElementById('dia').value)">Submit</button>
+    </form>
+
+    <p id="mensaje"></p>
+
+    <script src="formulario26.js"></script>
+</body>
+</html>
